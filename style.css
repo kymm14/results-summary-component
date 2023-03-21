@@ -1,0 +1,182 @@
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px hsl(241, 100%, 89%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto {
+    width: 350px;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2.80rem;
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+}
+
+.texto p {
+    color: hsl(241, 100%, 89%);
+    padding-top: 1rem;
+}
+
+.result {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.circulo {
+    margin: auto;
+    border-radius: 100%;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+
+.circulo p {
+    color: hsl(241, 100%, 89%);
+    padding: 0;
+}
+
+.num {
+    font-size: 4.5rem;
+    color: hsl(0, 0%, 100%)!important;
+    font-weight: 800;
+}
+
+.descripcion {
+    padding: 0 2rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.descripcion h2 {
+    color: hsl(0, 0%, 100%)!important;
+    font-size: 2rem;
+}
+
+.descripcion p {
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.summary div {
+    width: 350px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.summary-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+    justify-content: left;
+    padding: 1rem 2rem;
+    color: hsl(224, 30%, 27%);
+    padding-top: 2rem;
+}
+
+.summary-items p {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.summary-items p:nth-child(1) {
+    background-color: hsl(0, 100%, 98%);
+    color: hsl(0, 100%, 67%);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.summary-items p:nth-child(2) {
+    background-color: hsl(39, 100%, 98%);
+    color: hsl(39, 100%, 56%);
+    font-weight: 600;
+}
+
+.summary-items p:nth-child(3) {
+    background-color: hsl(166, 100%, 98%);
+    color: hsl(166, 100%, 37%);
+    font-weight: 600;
+}
+
+.summary-items p:nth-child(4) {
+    background-color: hsl(234, 85%, 98%);
+    color: hsl(234, 85%, 45%);
+    font-weight: 600;
+}
+
+.sobre {
+    color:grey;
+    font-weight: 800;
+}
+
+.marca {
+    padding-left: 2rem;
+    color: hsl(224, 30%, 27%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    padding: 1rem 6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 1rem;
+    align-items: center;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+}
